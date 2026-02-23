@@ -88,7 +88,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp UP                &kp Y              &kp U  &kp I         &kp O       &kp P        &kp ES_ACUTE
+&kp TAB     &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp UP                &kp Y              &kp U  &kp I         &kp O       &kp P           &kp ES_ACUTE
 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F         &kp G                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H              &kp J  &kp K         &kp L       &kp ES_N_TILDE  &kp ES_PLUS
 &kp LCTRL   &kp Z  &kp X  &kp C  &kp V         &kp B              &kp SPACE              &kp DOWN              &kp N              &kp M  &kp ES_COMMA  &kp ES_DOT  &kp ES_MINUS    &kp ES_LESS_THAN
                           &mo 3  &kp LEFT_GUI  &lt_space 4 ENTER                                               &lt_space 1 SPACE  &mo 2  &kp RALT
@@ -100,10 +100,10 @@
         SpecialCharacters {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp ES_EXCL   &kp ES_AMPS   &kp ES_ASTRK  &kp ES_LPAR   &kp ES_RPAR   &kp ES_MINUS
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ES_EQUAL  &kp ES_UNDER  &kp ES_DQT    &kp ES_PIPE   &kp ES_PRCNT  &kp ES_GRAVE
-&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp ES_AT     &kp ES_DLLR   &kp ES_APOS   &kp ES_BSLH   &trans        &kp ES_TILDE
-                                &none           &none            &none                                                              &trans     &trans     &trans
+&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp ES_EXCL           &kp ES_SLASH     &kp ES_LEFT_PARENTHESIS  &kp ES_RIGHT_PARENTHESIS  &kp ES_RPAR   &kp ES_MINUS
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ES_EQUAL          &kp ES_QUESTION  &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp ES_PRCNT  &kp ES_ASTERISK
+&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp ES_DOUBLE_QUOTES  &kp ES_DLLR      &kp LEFT_BRACE           &kp RIGHT_BRACE           &trans        &kp ES_TILDE
+                                &none           &none            &none                                                              &trans                &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -122,9 +122,9 @@
             display-name = "BT/HW";
             bindings = <
 &kp LA(TAB)  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans          &out OUT_USB    &out OUT_BLE     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans  &trans  &sys_reset      &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans           &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans            &trans          &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans
-                                &trans          &trans           &trans                                    &bt BT_CLR_ALL  &bt BT_CLR       &trans
+&trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans  &trans  &sys_reset      &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans           &trans
+&trans       &trans  &trans          &trans          &trans           &trans  &trans            &trans          &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans
+                                     &trans          &trans           &trans                                    &bt BT_CLR_ALL  &bt BT_CLR       &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
