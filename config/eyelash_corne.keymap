@@ -87,9 +87,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp UP                &kp Y              &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&kp LSHIFT  &kp A  &kp S  &kp D  &kp F         &kp G                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H              &kp J  &kp K      &kp L    &kp SEMI  &kp RBKT
-&kp LCTRL   &kp Z  &kp X  &kp C  &kp V         &kp B              &kp SPACE              &kp DOWN              &kp N              &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp NON_US_BACKSLASH
+&kp TAB     &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp UP                &kp Y              &kp U  &kp I         &kp O       &kp P        &kp ES_ACUTE
+&kp LSHIFT  &kp A  &kp S  &kp D  &kp F         &kp G                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H              &kp J  &kp K         &kp L       &kp ES_N_TILDE  &kp ES_PLUS
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V         &kp B              &kp SPACE              &kp DOWN              &kp N              &kp M  &kp ES_COMMA  &kp ES_DOT  &kp ES_MINUS    &kp ES_LESS_THAN
                           &mo 3  &kp LEFT_GUI  &lt_space 4 ENTER                                               &lt_space 1 SPACE  &mo 2  &kp RALT
             >;
 
@@ -99,9 +99,9 @@
         SpecialCharacters {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp EXCL   &kp AMPS   &kp ASTRK  &kp LPAR       &kp LS(N0)   &kp MINUS
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp UNDER  &kp DQT    &kp PIPE       &kp PERCENT  &kp GRAVE
-&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp AT     &kp DLLR   &kp APOS   &kp BACKSLASH  &trans       &kp TILDE
+&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp ES_EXCL   &kp ES_AMPS   &kp ES_ASTRK  &kp ES_LPAR   &kp ES_RPAR   &kp ES_MINUS
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ES_EQUAL  &kp ES_UNDER  &kp ES_DQT    &kp ES_PIPE   &kp ES_PRCNT  &kp ES_GRAVE
+&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp ES_AT     &kp ES_DLLR   &kp ES_APOS   &kp ES_BSLH   &trans        &kp ES_TILDE
                                 &none           &none            &none                                                              &trans     &trans     &trans
             >;
 
