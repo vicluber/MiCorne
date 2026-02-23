@@ -100,9 +100,9 @@
         SpecialCharacters {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp ES_EXCL           &kp ES_SLASH     &kp ES_LEFT_PARENTHESIS  &kp ES_RIGHT_PARENTHESIS  &kp ES_RPAR   &kp ES_MINUS
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ES_EQUAL          &kp ES_QUESTION  &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp ES_PRCNT  &kp ES_ASTERISK
-&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp ES_DOUBLE_QUOTES  &kp ES_DLLR      &kp LEFT_BRACE           &kp RIGHT_BRACE           &trans        &kp ES_TILDE
+&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                            &mmv MOVE_UP                     &kp ES_EXCL           &kp ES_SLASH     &kp ES_LEFT_PARENTHESIS  &kp ES_RIGHT_PARENTHESIS  &kp ES_PERCENT  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ES_EQUAL          &kp ES_QUESTION  &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &trans          &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp ES_DOUBLE_QUOTES  &kp ES_DLLR      &kp LEFT_BRACE           &kp RIGHT_BRACE           &trans          &trans
                                 &none           &none            &none                                                              &trans                &trans           &trans
             >;
 
