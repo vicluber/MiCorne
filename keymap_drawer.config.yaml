@@ -260,108 +260,100 @@ parse_config:
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
-    AT_SIGN: '"'
-    AT: '"'
+    AT_SIGN: "@"
+    AT: "@"
     HASH: "#"
     POUND: "#"
     DOLLAR: $
     DLLR: $
     PERCENT: "%"
     PRCNT: "%"
-    CARET: "&"
-    AMPERSAND: "/"
-    AMPS: "/"
-    ASTERISK: "("
-    ASTRK: "("
-    STAR: "("
-    LEFT_PARENTHESIS: ")"
-    LPAR: ")"
-    RIGHT_PARENTHESIS: "="
-    RPAR: "="
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
     EQUAL:
-      tap: "¿"
-      shifted: "¡"
-    PLUS: "¡"
+      tap: "="
+      shifted: "+"
+    PLUS: +
     MINUS:
-      tap: "'"
-      shifted: "?"
-    UNDERSCORE: "?"
-    UNDER: "?"
+      tap: "-"
+      shifted: "_"
+    UNDERSCORE: _
+    UNDER: _
     SLASH:
-      tap: "-"
-      shifted: "_"
+      tap: "/"
+      shifted: "?"
     FSLH:
-      tap: "-"
-      shifted: "_"
-    QUESTION: "_"
-    QMARK: "_"
+      tap: "/"
+      shifted: "?"
+    QUESTION: "?"
+    QMARK: "?"
     BACKSLASH:
-      tap: "}"
-      shifted: "]"
+      tap: '\'
+      shifted: "|"
     BSLH:
-      tap: "}"
-      shifted: "]"
-    PIPE: "]"
-    NON_US_BACKSLASH:
-      tap: "<"
-      shifted: ">"
-    PIPE2: ">"
-    NON_US_BSLH:
-      tap: "<"
-      shifted: ">"
+      tap: '\'
+      shifted: "|"
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
     SEMICOLON:
-      tap: "ñ"
-      shifted: "Ñ"
+      tap: ";"
+      shifted: ":"
     SEMI:
-      tap: "ñ"
-      shifted: "Ñ"
-    COLON: "Ñ"
+      tap: ";"
+      shifted: ":"
+    COLON: ":"
     SINGLE_QUOTE:
-      tap: "{"
-      shifted: "["
+      tap: "'"
+      shifted: '"'
     SQT:
-      tap: "{"
-      shifted: "["
-    APOSTROPHE:
-      tap: "{"
-      shifted: "["
-    APOS:
-      tap: "{"
-      shifted: "["
-    DOUBLE_QUOTES: "["
-    DQT: "["
+      tap: "'"
+      shifted: '"'
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
 
-    LESS_THAN: ";"
-    LT: ";"
+    LESS_THAN: <
+    LT: <
     PERIOD: '.'
     DOT:
       tap: "."
-      shifted: ":"
+      shifted: ">"
     COMMA:
       tap: ","
-      shifted: ";"
-    GREATER_THAN: ":"
-    GT: ":"
+      shifted: "<"
+    GREATER_THAN: ">"
+    GT: ">"
     LEFT_BRACKET:
-      tap: "´"
-      shifted: "¨"
+      tap: "["
+      shifted: "{"
     LBKT:
-      tap: "´"
-      shifted: "¨"
-    LEFT_BRACE: "¨"
-    LBRC: "¨"
+      tap: "["
+      shifted: "{"
+    LEFT_BRACE: "{"
+    LBRC: "{"
     RIGHT_BRACKET:
-      tap: "+"
-      shifted: "*"
+      tap: "]"
+      shifted: "}"
     RBKT:
-      tap: "+"
-      shifted: "*"
-    RIGHT_BRACE: "*"
-    RBRC: "*"
+      tap: "]"
+      shifted: "}"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
     GRAVE:
-      tap: "|"
-      shifted: "°"
-    TILDE: "°"
+      tap: "`"
+      shifted: "~"
+    TILDE: "~"
     NON_US_HASH: "#"
     NUHS: "#"
     TILDE2: "~"
@@ -372,7 +364,7 @@ parse_config:
       shifted: "!"
     N2:
       tap: 2
-      shifted: '"'
+      shifted: "@"
     N3:
       tap: 3
       shifted: "#"
@@ -384,19 +376,19 @@ parse_config:
       shifted: "%"
     N6:
       tap: 6
-      shifted: "&"
+      shifted: "^"
     N7:
       tap: 7
-      shifted: "/"
+      shifted: "&"
     N8:
       tap: 8
-      shifted: "("
+      shifted: "*"
     N9:
       tap: 9
-      shifted: ")"
+      shifted: "("
     N0:
       tap: 0
-      shifted: "="
+      shifted: ")"
 
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
